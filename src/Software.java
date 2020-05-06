@@ -8,6 +8,12 @@ public class Software extends Product {
         return "Software written by " + programmer;
     }
 
+    //compares count with hashCode
+    @Override
+    public boolean equals(Object obj) {
+        return this.count == obj.hashCode();
+    }
+
     public String getProgrammer() {
         return programmer;
     }

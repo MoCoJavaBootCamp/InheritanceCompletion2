@@ -14,6 +14,11 @@ public class Book extends Product {
         return "A novel by called " + title;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Book;
+    }
+
     public String getTitle() {
         return title;
     }

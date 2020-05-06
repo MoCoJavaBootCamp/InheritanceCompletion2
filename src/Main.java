@@ -16,5 +16,9 @@ public class Main {
         System.out.printf("mySoftware: %s\n" +
                 "Programmer: %s\n" +
                 "OS: %s\n", mySoftware.toString(), mySoftware.getProgrammer(), mySoftware.getOs());
+
+//        System.out.println(Product.equals(mySoftware));
+//        System.out.println(myBook.equals(mySoftware));
+//        System.out.println(mySoftware.equals(myBook));
     }
 }

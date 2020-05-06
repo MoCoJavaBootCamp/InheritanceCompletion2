@@ -28,6 +28,12 @@ public class Product {
                 "Price:              " + this.getFormattedPrice(this.price) + "\n";
     }
 
+    //returns instanceof
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Product;
+    }
+
     private String getFormattedPrice(double price) {
         // Use the NumberFormat class to format the price to 2 decimal places
         return NumberFormat.getInstance().format(price);
