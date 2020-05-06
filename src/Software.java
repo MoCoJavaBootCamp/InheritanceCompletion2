@@ -11,7 +11,7 @@ public class Software extends Product {
     //compares count with hashCode
     @Override
     public boolean equals(Object obj) {
-        return this.count == obj.hashCode();
+        return this.hashCode == obj.hashCode();
     }
 
     public String getProgrammer() {
